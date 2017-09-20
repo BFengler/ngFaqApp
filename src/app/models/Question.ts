@@ -1,5 +1,5 @@
 
-export interface Question{
+export interface Question {
     text: string;
     answer: string;
     hide: boolean;
