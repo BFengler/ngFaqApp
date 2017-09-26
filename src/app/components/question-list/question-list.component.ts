@@ -10,7 +10,7 @@ import { Question } from '../../models/Question';
 })
 export class QuestionListComponent implements OnInit {
 
-  questions:Question[];
+  questions: Question[];
 
   constructor(public dataService: DataService) {
   }
@@ -19,4 +19,7 @@ export class QuestionListComponent implements OnInit {
     this.questions = this.dataService.getQuestions();
   }
 
+  addQuestion(question: Question){
+    console.log(question);
+  }
 }
